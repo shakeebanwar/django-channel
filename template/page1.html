@@ -16,14 +16,14 @@
 </head>
 <body>
     <div class="container mt-4">
-        <input type="text" class="form-control" id="txtmsg">
+      
         <input type="text" class="form-control" onkeyup="changes(this)">
         <button class="btn btn-info" id="click">ok</button>
     </div>
 
 
 <script>
-    const chanel="alert"
+    const chanel="doctor1patient"
     const chatSocket = new WebSocket(
         'ws://'+ window.location.host+ '/ws/chat/'+ chanel+ '/'
     );
